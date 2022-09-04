@@ -2,3 +2,128 @@
   background: rgb(63,94,251);
   background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
+
+.bg1{
+  background: rgb(63,94,251);
+  background-image: linear-gradient(to right, rgba(63,94,251,1) , rgba(252,70,107,1));
+}
+
+.bg2{
+  background-image: url('paper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+
+.typewriter{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid green; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .15em; /* Adjust as needed */
+  animation: 
+    typing 3.5s steps(40, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: green; }
+}
+
+.box1{
+	width: 100%;	
+	padding-top: 1%;
+	padding-bottom: 1%;
+	background: rgba(0,0,0,0.6);
+}
+
+.sashka{
+	font-size: 500%;
+	font-family: copperplate;
+}
+
+.anim_grad {
+  font-family: copperplate;
+  background: linear-gradient(to right, #213a9c 20%, #5e0fc4 30%, #c40fab 70%, #213a9c 80%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  background-size: 200% auto;
+  animation: textShine 7s ease-in-out infinite alternate;
+}
+
+@keyframes textShine {
+  to {
+    background-position: 200%;
+  }
+}
+
+div#slider { overflow: hidden; }
+div#slider figure img { width: 10%; padding-left: 5%;  padding-right: 5%;  padding-top: 1%; padding-bottom: 1%; float: left; }
+div#slider figure { 
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  text-align: left;
+  font-size: 0;
+  animation: 30s slidy infinite; 
+}
+
+@keyframes slidy {
+0% { left: 0%; }
+20% { left: 0%; }
+40% { left: -100%; }
+60% { left: -200%; }
+80% { left: -100%; }
+100% { left: 0%; }
+}
+
+.ssilka{
+	text-decoration: none;
+	font-family: copperplate;
+	color: white;
+}
+
+.box2 {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+#block_container {
+    display: flex;
+    justify-content: center;
+}
+
+.bottom_link {
+	font-size: 300%;
+	text-decoration: none;
+	font-family: copperplate;
+	color: white;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
